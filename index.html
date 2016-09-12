@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>laihaibo</title>
-        <link rel="stylesheet" href="./src/lib/mdl/material.min.css">
-        <script src="./src/lib/mdl/material.min.js"></script>
+        <meta name="keywords" content="github,个人网站">
+        <meta name="description" content="我的个人github主页">
+
+        <!--引入material design-->
+        <link href="//cdn.bootcss.com/material-design-lite/1.2.1/material.min.css" rel="stylesheet">
+        <script src="//cdn.bootcss.com/material-design-lite/1.2.1/material.min.js"></script>
         <link rel="stylesheet" href="./src/lib/mdl/material_icon.css">
+        <!--引入弹框样式代码-->
         <link rel="stylesheet" href="./src/css/main.css">
+
     </head>
     <body>
       <div id="app">
@@ -55,20 +61,9 @@
           <div class="mdl-cell mdl-cell--1-col"></div>
           <div class="mdl-cell mdl-cell--10-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--middle">
             <h1>Home</h1>
-            <p>{{msg}}</p>
-            <button id="xixi" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">View Code</button>
-            <dialog id="xixidialog" class="mdl-dialog">
-                <!-- <h4 class="mdl-dialog__title"></h4> -->
-                <div class="mdl-dialog__content">
-                  <p>
-                    嘻嘻
-                  </p>
-                </div>
-                <div class="mdl-dialog__actions">
-                  <a type="button" class="mdl-button" href="https://github.com/laihaibo/laihaibo.github.io" target="_blank">查看源码</a>
-                  <button type="button" class="mdl-button close">再会</button>
-                </div>
-              </dialog>
+            <P>{{msg}}</P>
+            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" target="_blank" href="https://github.com/laihaibo">GITHUB</a>
+            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" target="_blank" href="http://laihaibo.xyz/blog/">BLOG</a>
           </div>
           <div class="mdl-cell mdl-cell--1-col mdl-cell--bottom">
 
@@ -83,11 +78,11 @@
           <!-- Simple list -->
           <ul class="demo-list-item mdl-list">
             <li class="mdl-list__item">
-              <a v-link="{ path: '/project/big'}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" :class="currentPath == '/project/big' ? 'is-active': ''">大作品</a>
+              <a v-link="{ path: '/project/big'}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" :class="currentPath == '/project/big' ? 'is-active': ''">作品</a>
             </li>
-            <li class="mdl-list__item">
+<!--             <li class="mdl-list__item">
               <a v-link="{ path: '/project/little'}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" :class="currentPath == '/project/little' ? 'is-active': ''">小作品</a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="mdl-cell mdl-cell--9-col">
@@ -118,6 +113,7 @@
         </ul>
       </template>
 
+      <!-- 鸡汤模块 -->
       <template id="csoup">
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--1-col"></div>
@@ -139,12 +135,14 @@
         </div>
       </template>
 
+      <!-- about模块 -->
       <template id="about">
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--1-col"></div>
           <div class="mdl-cell mdl-cell--10-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--middle">
             <h1>关于</h1>
             <p>本网站采用Vue+Vue.router+Material Design Lite搭建</p>
+            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" target="_blank" href="https://github.com/laihaibo/laihaibo.github.io">查看源码</a>
             <h2>联系我</h2>
             <p>GitHub：<a href="https://github.com/laihaibo">laihaibo</a></p>
             <p>微信：lhb1327</p>
@@ -153,8 +151,10 @@
         </div>
       </template>
 
-      <script src="./src/lib/vue/vue.js"></script>
-      <script src="./src/lib/vue/vue-router.js"></script>
+      <!--引入vue-->
+      <script src="//cdn.bootcss.com/vue/1.0.26/vue.min.js"></script>
+      <script src="//cdn.bootcss.com/vue-router/0.7.13/vue-router.min.js"></script>
+      <!-- 引入vue操控逻辑代码 -->
       <script src="./src/js/main.js"></script>
     </body>
 </html>
