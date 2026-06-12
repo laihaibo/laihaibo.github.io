@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于"
+  },
+  "home": {
+    "hero": {
+      "name": "赖海波",
+      "intro": "全栈开发工程师"
+    },
+    "metaCert": {
+      "title": "Meta Cert 项目",
+      "desc": "区块链证书验证系统",
+      "link": "查看项目"
+    },
+    "techStack": {
+      "title": "技术栈"
+    }
+  },
+  "about": {
+    "title": "关于我",
+    "contact": {
+      "title": "联系方式",
+      "wechat": "微信",
+      "email": "邮箱",
+      "github": "GitHub"
+    }
+  }
+}

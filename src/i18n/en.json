@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About"
+  },
+  "home": {
+    "hero": {
+      "name": "Lai Haibo",
+      "intro": "Full Stack Developer"
+    },
+    "metaCert": {
+      "title": "Meta Cert Project",
+      "desc": "Blockchain Certificate Verification System",
+      "link": "View Project"
+    },
+    "techStack": {
+      "title": "Tech Stack"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "contact": {
+      "title": "Contact",
+      "wechat": "WeChat",
+      "email": "Email",
+      "github": "GitHub"
+    }
+  }
+}

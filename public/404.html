@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // Map old paths to new hash routes
+    var redirects = {
+      '/home': '/#/',
+      '/project': '/#/',
+      '/project/big': '/#/',
+      '/csoup': '/#/',
+      '/project/little': '/#/',
+      '/about': '/#/about',
+    };
+
+    var path = window.location.pathname;
+    if (redirects[path]) {
+      window.location.replace(redirects[path]);
+    } else {
+      // Unknown path — go to home
+      window.location.replace('/#/');
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
