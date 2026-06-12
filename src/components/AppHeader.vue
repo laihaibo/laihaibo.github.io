@@ -13,21 +13,21 @@ function toggleLocale() {
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-dark-surface/80 backdrop-blur-md shadow-black/20 shadow-sm">
     <nav class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-      <router-link to="/" class="text-xl font-bold text-gray-900 hover:text-primary transition-colors">
+      <router-link to="/" class="text-xl font-bold text-dark-text hover:text-primary transition-colors">
         LHB
       </router-link>
       <div class="flex items-center gap-6">
-        <router-link to="/" exact-active-class="!text-primary font-medium" class="text-gray-600 hover:text-primary transition-colors">
+        <router-link to="/" exact-active-class="!text-primary font-medium" class="text-zinc-400 hover:text-primary transition-colors">
           {{ t('nav.home') }}
         </router-link>
-        <router-link to="/about" active-class="!text-primary font-medium" class="text-gray-600 hover:text-primary transition-colors">
+        <router-link to="/about" active-class="!text-primary font-medium" class="text-zinc-400 hover:text-primary transition-colors">
           {{ t('nav.about') }}
         </router-link>
         <button
           @click="toggleLocale"
-          class="px-3 py-1 text-sm border border-gray-300 rounded-full hover:border-primary hover:text-primary transition-colors"
+          class="px-3 py-1 text-sm border border-zinc-700 rounded-full hover:border-primary hover:text-primary transition-colors text-zinc-400"
         >
           {{ locale === 'zh-CN' ? 'EN' : 'CN' }}
         </button>

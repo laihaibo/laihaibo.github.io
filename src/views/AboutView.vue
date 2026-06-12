@@ -16,9 +16,9 @@ const { t } = useI18n()
           <img
             src="/avatar.svg"
             :alt="t('home.hero.name')"
-            class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg"
+            class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-zinc-800 shadow-lg"
           />
-          <h1 class="text-3xl font-bold text-gray-900">{{ t('about.title') }}</h1>
+          <h1 class="text-3xl font-bold text-dark-text">{{ t('about.title') }}</h1>
         </div>
       </AnimateOnScroll>
 

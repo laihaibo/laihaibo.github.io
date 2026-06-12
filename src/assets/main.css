@@ -5,7 +5,17 @@
   --color-primary-dark: #C62D3A;
   --color-primary-light: #FF6B6B;
 
+  --color-dark-bg: #0a0a0f;
+  --color-dark-surface: #12121a;
+  --color-dark-text: #e4e4e7;
+
   --font-family-sans: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: var(--color-dark-text);
+  color-scheme: dark;
 }
 
 @keyframes fadeIn {
