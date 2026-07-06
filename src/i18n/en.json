@@ -13,6 +13,11 @@
       "desc": "Blockchain Certificate Verification System",
       "link": "View Project"
     },
+    "codexHowto": {
+      "title": "Codex Howto",
+      "desc": "A practical guide to using Codex CLI",
+      "link": "Read Docs"
+    },
     "techStack": {
       "title": "Tech Stack"
     }

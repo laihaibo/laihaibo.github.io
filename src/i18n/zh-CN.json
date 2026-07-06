@@ -13,6 +13,11 @@
       "desc": "区块链证书验证系统",
       "link": "查看项目"
     },
+    "codexHowto": {
+      "title": "Codex 指南",
+      "desc": "Codex CLI 实用使用指南",
+      "link": "阅读文档"
+    },
     "techStack": {
       "title": "技术栈"
     }
