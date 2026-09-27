@@ -1,57 +1,40 @@
 # laihaibo.github.io
 
-Personal homepage for Lai Haibo, built with Vue 3 + Vite + Tailwind CSS v4.
+Personal website of [Lai Haibo](https://github.com/laihaibo), built with **Next.js** and an Apple-style **Liquid Glass** design (light & dark themes).
 
 ## Tech Stack
 
-- **Framework**: Vue 3 (Composition API)
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS v4
-- **Routing**: Vue Router 4 (hash mode)
-- **i18n**: Vue I18n 9 (Chinese / English)
+- [Next.js](https://nextjs.org/) 15 (App Router) + React 19 + TypeScript
+- [Tailwind CSS](https://tailwindcss.com/) v4
+- Lightweight custom i18n (zh-CN / en) — no extra dependencies
+- Pure CSS aurora background (no particle libraries)
 
-## Local Development
+## Development
 
 ```bash
 npm install
-npm run dev
+npm run dev     # http://localhost:3000
 ```
 
-The dev server will start at `http://localhost:5173`.
+## Build & Deploy
 
-## Build
+The site is statically exported (`output: 'export'`) and deployed to **GitHub Pages** via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to `master`. Build output goes to `out/`; `public/.nojekyll` keeps GitHub Pages from ignoring `_next/` assets.
 
 ```bash
-npm run build
+npm run build   # static export → out/
 ```
 
-Output is in the `dist/` directory.
-
-## Preview Production Build
-
-```bash
-npm run preview
-```
-
-## Deployment
-
-Push to the `master` branch triggers GitHub Actions, which builds and deploys to GitHub Pages automatically.
-
-The workflow is defined in `.github/workflows/deploy.yml`.
-
-## Project Structure
+## Structure
 
 ```
 src/
-  assets/main.css      -- Tailwind v4 theme config + animations
-  components/          -- Reusable Vue components
-  i18n/                -- Internationalization (zh-CN, en)
-  layouts/             -- Page layout wrappers
-  router/              -- Vue Router config (hash mode)
-  views/               -- Page views (Home, About)
+├── app/            # layout, home, about, 404, sitemap, robots
+├── components/     # glass UI components (header, hero, repo list, …)
+└── i18n/           # zh-CN / en dictionaries + provider
 public/
-  404.html             -- Old URL redirect handler
-  avatar.svg           -- Profile avatar
+├── .nojekyll       # serve _next/ assets on GitHub Pages
+├── avatar.svg
+└── favicon.svg
 ```
 
 ## License
